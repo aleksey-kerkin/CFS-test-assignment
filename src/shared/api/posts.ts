@@ -1,5 +1,5 @@
 import axios from "axios";
-import type { Post } from "../../entities/post/types";
+import type { Post } from "@/entities/post/types";
 
 const API_URL = "https://jsonplaceholder.typicode.com/posts";
 
