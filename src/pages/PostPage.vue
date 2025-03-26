@@ -1,18 +1,28 @@
 <template>
   <div class="container mx-auto min-h-screen place-content-center p-4">
-    <div v-if="loading" class="py-4 text-center">Loading...</div>
-    <div v-else-if="post" class="border-l-4 border-blue-500/50 px-8 py-2">
-      <h1 class="mb-4 text-2xl font-bold">
+    <div v-if="loading" class="animate-pulse py-4 text-center">Loading...</div>
+    <div
+      v-else-if="post"
+      class="rounded-se-md rounded-b-md border-l-4 border-blue-500/50 py-4 pr-4 pl-8 shadow-md ring-2 shadow-zinc-500/50 ring-blue-300"
+    >
+      <h1 class="mb-4 text-2xl font-bold text-balance">
         {{ post.title }}
       </h1>
       <p class="mb-4 text-gray-700">{{ post.body }}</p>
-      <router-link to="/" class="text-blue-500 hover:underline">
+      <router-link
+        to="/"
+        class="text-blue-500 underline-offset-2 hover:text-blue-500/50 hover:underline active:text-blue-900"
+      >
         Back to Home
       </router-link>
     </div>
     <div v-else class="py-4 text-center">
-      <p>Post not found</p>
-      <router-link to="/" class="text-blue-500 hover:underline">
+      <h1 class="text-3xl">404</h1>
+      <p class="mb-6 text-2xl">Post not found</p>
+      <router-link
+        to="/"
+        class="text-blue-500 underline-offset-2 hover:text-blue-500/50 hover:underline active:text-blue-900"
+      >
         Back to Home
       </router-link>
     </div>
