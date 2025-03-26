@@ -1,8 +1,10 @@
 <template>
-  <div class="container mx-auto p-4">
+  <div class="container mx-auto min-h-screen place-content-center p-4">
     <div v-if="loading" class="py-4 text-center">Loading...</div>
-    <div v-else-if="post">
-      <h1 class="mb-4 text-2xl font-bold">{{ post.title }}</h1>
+    <div v-else-if="post" class="border-l-4 border-blue-500/50 px-8 py-2">
+      <h1 class="mb-4 text-2xl font-bold">
+        {{ post.title }}
+      </h1>
       <p class="mb-4 text-gray-700">{{ post.body }}</p>
       <router-link to="/" class="text-blue-500 hover:underline">
         Back to Home

@@ -3,7 +3,7 @@
     <button
       @click="prevPage"
       :disabled="currentPage === 1"
-      class="cursor-pointer rounded bg-gray-200 px-4 py-2 shadow-sm shadow-zinc-500/50 duration-200 hover:bg-zinc-700 hover:text-white/90 disabled:cursor-not-allowed disabled:bg-zinc-100 disabled:text-black/50 disabled:shadow-none"
+      class="cursor-pointer rounded bg-gray-200 px-4 py-2 shadow-sm shadow-zinc-500/50 duration-200 hover:bg-zinc-700 hover:text-white/90 active:text-blue-500 disabled:cursor-not-allowed disabled:bg-zinc-100 disabled:text-black/50 disabled:shadow-none"
     >
       Previous
     </button>
@@ -11,7 +11,7 @@
     <button
       @click="nextPage"
       :disabled="currentPage === totalPages"
-      class="cursor-pointer rounded bg-gray-200 px-4 py-2 shadow-sm shadow-zinc-500/50 duration-200 hover:bg-zinc-700 hover:text-white/90 disabled:cursor-not-allowed disabled:bg-zinc-100 disabled:text-black/50 disabled:shadow-none"
+      class="cursor-pointer rounded bg-gray-200 px-4 py-2 shadow-sm shadow-zinc-500/50 duration-200 hover:bg-zinc-700 hover:text-white/90 active:text-blue-500 disabled:cursor-not-allowed disabled:bg-zinc-100 disabled:text-black/50 disabled:shadow-none"
     >
       Next
     </button>
